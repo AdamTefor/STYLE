@@ -1,51 +1,29 @@
-<!DOCTYPE html>
-<html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <title>Projet final</title>
-</head>
-<body>
-    <header>
-        <h1>Devaraj CK</h1>
-        <nav>
-            <a href="http://www.gmail.com">Un</a>
-            <a href="http://www.facebook.com">Deux</a>
-            <a href="http://www.google.com">Trois</a>
-            <a href="http://www.github.com/ammaritiz">Github</a><br>
-        </nav>
-    </header>
-    
-    <section>
-        <h2>Aliments préférés</h2>
-        <ul>
-            <li>Pav Bhaji</li>
-            <li>Gulab Jamun</li>
-            <li>Poulet</li>
-            <li>Le délice du diable</li>
-        </ul>
-    </section>
+/* Styles par défaut pour les éléments div et images */
+div {
+  /* Styles pour la vue mobile */
+}
 
-    <section>
-        <h2>Réalisations</h2>
-        <p>Progression dans ce cours (100%)</p>
-        <progress value="100" max="100"></progress>
-        <p>Progrès dans le capstone de spécialisation (20%)</p>
-        <progress value="20" max="100"></progress>
-        <p>Progrès dans les objectifs de vie (25%)</p>
-        <progress value="25" max="100"></progress>
-    </section>
+img {
+  /* Styles pour les images */
+}
 
-    <section>
-        <h2>En savoir plus sur moi</h2>
-        <details>
-            <summary>Mon enfance</summary>
-            <p>J'ai grandi à Tumkur. Je vivais dans une petite maison et le plaisir que j'avais à l'époque me manque vraiment.</p>
-        </details>
-    </section>
+/* Requête média pour la vue tablette (à partir de 772px) */
+@media screen and (min-width: 772px) {
+  div {
+    width: 45%; /* Largeur de 45% de la fenêtre */
+    /* Ajoutez d'autres styles spécifiques à la vue tablette */
+  }
 
-    <footer>
-        <img src="http://www.intro-webdesign.com/images/newlogo.png" alt="Conception Web pour tous">
-        <p>Cette page a été créée par Devaraj & Colleen van Lent. Pour en savoir plus sur la conception Web, visitez <a href="http://www.intro-webdesign.com/">Introduction à la conception Web</a></p>
-    </footer>
-</body>
-</html>
+  img {
+    max-height: 30%; /* Hauteur maximale de 30% de la fenêtre */
+    /* Ajoutez d'autres styles spécifiques à la vue tablette pour les images */
+  }
+}
+
+/* Requête média pour la vue grand écran (à partir de 998px) */
+@media screen and (min-width: 998px) {
+  div {
+    width: 30%; /* Largeur de 30% de l'écran */
+    /* Ajoutez d'autres styles spécifiques à la vue grand écran */
+  }
+}
